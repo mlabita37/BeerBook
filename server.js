@@ -16,6 +16,9 @@ mongoose.connect(process.env.MONGOLAB_URI || 'mongodb://localhost/brewbook-01');
 var indexRouter = require('./routers/index');
 app.use('/', indexRouter);
 
+var apiRouter = require('./routers/api/apiRouter');
+app.use('/api/users', apiRouter);
+
 var port = 5000;
 app.listen(port, function(){
   console.log('...listening on ' + port);

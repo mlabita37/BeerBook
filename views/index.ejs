@@ -6,21 +6,25 @@
     <title>BrewBook</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha/css/bootstrap.css">
     <link rel="stylesheet" href="/css/styles.css">
-
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
+    <script src="/js/app.js" charset="utf-8"></script>
   </head>
   <body class="container">
+    <header>
     <h2>Brew Book</h2>
+    <div id="title" ng-show="registered">Hi {{name}} </div>
+    </header>
     <section ng-controller="usersController">
       <form ng-submit="createUser()">
         <fieldset class="form-group">
-          <label for="exampleInputEmail1">Email address</label>
-          <input ng-model="newUser.username" type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+          <label>Username</label>
+          <input ng-model="newUser.username" type="text" class="form-control" id="email" placeholder="Enter username">
         </fieldset>
         <fieldset class="form-group">
-          <label for="exampleInputPassword1">Password</label>
-          <input ng-model="newUser.password" type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+          <label>Password</label>
+          <input ng-model="newUser.password" type="text" class="form-control" id="password" placeholder="Password">
         </fieldset>
-        <button type="submit" class="btn btn-primary">Submit</button>
+        <input type="submit" class="btn btn-primary"></input>
       </form>
     </section>
   </body>
