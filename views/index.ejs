@@ -1,7 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="BrewBook">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>BrewBook</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha/css/bootstrap.css">
     <link rel="stylesheet" href="/css/styles.css">
@@ -9,5 +10,18 @@
   </head>
   <body>
     <h2>Brew Book</h2>
+    <section ng-controller="usersController">
+      <form ng-submit="createUser()">
+        <fieldset class="form-group">
+          <label for="exampleInputEmail1">Email address</label>
+          <input ng-model="newUser.username" type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+        </fieldset>
+        <fieldset class="form-group">
+          <label for="exampleInputPassword1">Password</label>
+          <input ng-model="newUser.password" type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+        </fieldset>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </section>
   </body>
 </html>
