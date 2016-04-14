@@ -1,25 +1,68 @@
 body {
-  background-color: lightblue;
+  background-color: #D7CEC7;
   font-family: 'Titillium Web', sans-serif;
   font-weight: 200;
+  background: url("http://www.hdwallpapersact.com/wp-content/uploads/2013/09/beer-with-different-flavour.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  color: #fff;
 }
 
 header {
   background-color: #000;
   padding-top: 20px;
+  overflow: auto;
 }
 
 h2 {
   text-align: center;
-  margin: 0 auto;
-  color: #fff;
+  padding-right: 20px;
+  font-size: 2em;
+  float: right;
+  margin-top: -10px;
 }
+section {
+  width: 90%;
+}
+
+.about {
+  color: #fff;
+  font-size: 1.25em;
+  text-align: center;
+  margin: 20px auto;
+  background-color: rgba(0,0,0,0.8);
+  padding: 5px;
+}
+
+p {
+  font-weight: 400;
+}
+
+.signup {
+  background-color: rgba(215,195,199,0.8);
+  color: #000;
+}
+
+h4 {
+  text-align: center;
+  margin: 20px auto 0;
+}
+
+nav {
+  float: left;
+  font-size: 2em;
+  padding-left: 20px;
+  margin-top: -16px;
+}
+
 p#member {
   margin: 20px auto;
   text-align: center;
 }
 
 #login {
-  color: blue;
+  color: #0000FF; /*Blue*/
   text-decoration: underline;
 }
