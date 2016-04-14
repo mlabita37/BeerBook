@@ -4,17 +4,18 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>BrewBook</title>
+    <link href='https://fonts.googleapis.com/css?family=Titillium+Web:400,200' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha/css/bootstrap.css">
     <link rel="stylesheet" href="/css/styles.css">
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
     <script src="/js/app.js" charset="utf-8"></script>
   </head>
-  <body class="container">
-    <header ng-controller="usersController">
+  <body>
+    <header ng-controller="usersController" class=".col-md-12">
     <h2>Brew Book</h2>
     <p ng="username">Hi, {{username}}</p>
     </header>
-    <section ng-controller="usersController">
+    <section ng-controller="usersController" class="container">
       <form ng-submit="createUser()">
         <fieldset class="form-group">
           <label>Username</label>
