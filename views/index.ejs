@@ -10,8 +10,9 @@
     <script src="/js/app.js" charset="utf-8"></script>
   </head>
   <body class="container">
-    <header>
+    <header ng-controller="usersController">
     <h2>Brew Book</h2>
+    <p ng="username">Hi, {{username}}</p>
     </header>
     <section ng-controller="usersController">
       <form ng-submit="createUser()">
@@ -25,7 +26,8 @@
         </fieldset>
         <input type="submit" class="btn btn-primary"></input>
       </form>
-          <ul><li ng-repeat="user in users">Hi {{ user.username }} </li></ul>
+      <p id="member">Already a member?&nbsp;<span id="login" ng-click='showLogin()'>Login</span></p>
     </section>
+
   </body>
 </html>
