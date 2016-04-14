@@ -12,13 +12,12 @@
   <body class="container">
     <header>
     <h2>Brew Book</h2>
-    <div id="title" ng-show="registered">Hi {{name}} </div>
     </header>
     <section ng-controller="usersController">
       <form ng-submit="createUser()">
         <fieldset class="form-group">
           <label>Username</label>
-          <input ng-model="newUser.username" type="text" class="form-control" id="email" placeholder="Enter username">
+          <input ng-model="newUser.username" type="text" class="form-control" id="email" placeholder="Username">
         </fieldset>
         <fieldset class="form-group">
           <label>Password</label>
@@ -26,6 +25,7 @@
         </fieldset>
         <input type="submit" class="btn btn-primary"></input>
       </form>
+          <ul><li ng-repeat="user in users">Hi {{ user.username }} </li></ul>
     </section>
   </body>
 </html>

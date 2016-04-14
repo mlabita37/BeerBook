@@ -19,6 +19,7 @@ app.controller('usersController', ['$scope', '$http', function($scope, $http){
       $scope.users.push( data );
       $scope.allUsers();
       $scope.newUser = '';
+      $scope.registered = true;
     });
   };
 

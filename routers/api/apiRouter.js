@@ -16,7 +16,7 @@ apiRouter.post('/', function(req, res){
   console.log('User info', req.body);
   var newUser = new User( req.body.user );
   newUser.save(function(err, dbUser){
-    res.json( dbUser );
+  res.json( dbUser );
   });
 });
 
